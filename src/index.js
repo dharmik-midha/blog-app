@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://dharmik-blog-app.herokuapp.com";
+axios.defaults.baseURL = process.env.REACT_APP_URL || "http://localhost:5000";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
